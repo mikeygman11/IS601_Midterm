@@ -1,4 +1,5 @@
 
+#__init__.py
 # Import necessary modules and classes
 from calculator.calculations import Calculations  # Manages history of calculations
 from calculator.operations import add, subtract, multiply, divide  # Arithmetic operations

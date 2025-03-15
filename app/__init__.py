@@ -1,4 +1,4 @@
-from .Calculator import Calculator  # Import Calculator using a relative import
+from calculator import Calculator  # Import Calculator using a relative import
 
 class App:
     def __init__(self):
