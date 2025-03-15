@@ -3,21 +3,40 @@ import os
 import pkgutil
 import logging
 
-class PluginManager:
-    def __init__(self):
-        self.plugins = {}
-        self.logger = logging.getLogger(__name__)
+def load_plugins(command_handler):
+    """
+    Dynamically loads plugins from the 'plugins' directory.
+    Each plugin must define a register(command_handler) function.
+    """
+    plugins_package = "plugins"
+    plugins_path = os.path.join(os.getcwd(), "plugins")
 
-    def load_plugins(self):
-        """Dynamically loads available plugins."""
-        plugin_dir = "plugins"
-        if not os.path.exists(plugin_dir):
-            os.makedirs(plugin_dir)
-        for _, plugin_name, _ in pkgutil.iter_modules([plugin_dir]):
-            try:
-                module = importlib.import_module(f"plugins.{plugin_name}")
-                self.plugins[plugin_name] = module
-                self.logger.info(f"Loaded plugin: {plugin_name}")
-                print(f"Plugin '{plugin_name}' loaded.")
-            except Exception as e:
-                self.logger.error(f"Failed to load plugin {plugin_name}: {e}")
+    logger = logging.getLogger(__name__)
+    logger.info("Loading plugins...")
+
+    if not os.path.exists(plugins_path):
+        logger.warning(f"Plugins directory '{plugins_path}' not found.")
+        print(f"WARNING: Plugins directory '{plugins_path}' not found.")
+        return
+
+    print("DEBUG: Loading plugins...")
+    
+    for _, plugin_name, is_pkg in pkgutil.iter_modules([plugins_path]):
+        if plugin_name == "load_plugins" or is_pkg:
+            continue  # Skip the plugin loader and any package directories
+
+        try:
+            plugin_module = importlib.import_module(f"{plugins_package}.{plugin_name}")
+            print(f"DEBUG: Found plugin '{plugin_name}'")
+
+            if hasattr(plugin_module, "register"):
+                plugin_module.register(command_handler)  # ✅ Use `command_handler` directly (No `self.`)
+                logger.info(f"Plugin '{plugin_name}' loaded successfully.")
+                print(f"DEBUG: Plugin '{plugin_name}' registered successfully!")
+            else:
+                logger.warning(f"Plugin '{plugin_name}' does not have a register() function.")
+                print(f"WARNING: Plugin '{plugin_name}' does not have a register() function.")
+        
+        except ImportError as e:
+            logger.error(f"Failed to load plugin '{plugin_name}': {e}")
+            print(f"ERROR: Failed to load plugin '{plugin_name}': {e}")

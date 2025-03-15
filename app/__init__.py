@@ -5,7 +5,8 @@ import logging
 import logging.config
 import os
 from dotenv import load_dotenv
-
+from plugins.loadPlugins import load_plugins
+from log.logging_setup import configure_logging
 
 class App:
     def __init__(self):
@@ -19,9 +20,12 @@ class App:
         self.settings.setdefault('ENVIRONMENT', 'PRODUCTION')
 
         self.command_handler = CommandHandler()
+        load_plugins(self.command_handler)
+
     def start(self):
-        # self.logger.info("Calculator REPL started.")
-        print("Welcome to the Calculator REPL!")
+        print("\nDEBUG: Available commands:", list(self.command_handler.commands.keys()))  # Debugging print
+
+        self.logger.info("Application started. Type 'exit' to exit.")       
         print("Supported commands: add, subtract, multiply, divide")
         print("Type 'exit' at any prompt to quit.")
 
