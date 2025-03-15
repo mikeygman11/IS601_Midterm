@@ -2,36 +2,69 @@ from log.logging_setup import configure_logging  # Import from log folder
 from app.CommandHandler import CommandHandler
 import sys
 import logging
+import logging.config
+import os
+from dotenv import load_dotenv
+
 
 class App:
     def __init__(self):
-        print("TEST")
-        configure_logging()
+        """Initialize the application with logging, environment variables, and command handling."""
+        os.makedirs('logs', exist_ok=True)  # Ensure the logs directory exists
+        configure_logging(self)  # Set up logging
         self.logger = logging.getLogger(__name__)
+
+        load_dotenv()  # Load environment variables from .env file
+        self.settings = self.load_environment_variables()  
+        self.settings.setdefault('ENVIRONMENT', 'PRODUCTION')
+
         self.command_handler = CommandHandler()
-
     def start(self):
-        self.logger.info("Calculator REPL started.")
+        # self.logger.info("Calculator REPL started.")
         print("Welcome to the Calculator REPL!")
+        print("Supported commands: add, subtract, multiply, divide")
+        print("Type 'exit' at any prompt to quit.")
 
-        while True:
-            command = input("Enter command: ").strip().lower()
-            if command == "exit":
-                self.logger.info("Exiting REPL.")
-                print("Goodbye!")
-                sys.exit(0)
+        try:
+            while True:
+                cmd_input = input(">>> ").strip().lower()
+                if cmd_input == "exit":
+                    logging.info("Application exit.")
+                    print("Exiting!")
+                    sys.exit(0)
 
-            try:
-                num1 = float(input("Enter first number: "))
-                num2 = float(input("Enter second number: "))
-                result = self.command_handler.execute_command(command, num1, num2)
-                print("Result:", result)
-                self.logger.info(f"Performed {command} on {num1}, {num2}: {result}")
-            except Exception as e:
-                self.logger.error(f"Error: {e}")
-                print(f"Error: {e}")
+                try:
+                    num1 = float(input("Enter first number: "))
+                    num2 = float(input("Enter second number: "))
+                    result = self.command_handler.execute_command(cmd_input, num1, num2)
+                    print(f"Result: {result}")
+                    logging.info(f"Executed {cmd_input} with inputs {num1} and {num2}: Result {result}")
+
+                except ValueError:
+                    print("Error: Please enter valid numbers.")
+                    logging.warning(f"Invalid number input for command {cmd_input}")
+
+                except KeyError:
+                    print(f"Error: Unknown command '{cmd_input}'")
+                    logging.error(f"Unknown command entered: {cmd_input}")
+
+        except KeyboardInterrupt:
+            logging.info("Application interrupted. Exiting")
+            print("\nGoodbye!")
+            sys.exit(0)
+
+        finally:
+            logging.info("Shutting Down")
+
+    def load_environment_variables(self):
+        """Loads environment variables into the settings dictionary."""
+        settings = {key: value for key, value in os.environ.items()}
+        logging.info("Environment variables loaded.")
+        return settings
+    
+
 
 if __name__ == "__main__":
-    print("DEBUG: main.py execution started")  # Debug print
-    app = App()  # Constructor should print debug message
+    # print("DEBUG: main.py execution started")  # Debug print
+    app = App()
     app.start()
