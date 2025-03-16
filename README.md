@@ -6,6 +6,8 @@ IS601 Midterm
 ## Overview
 This project is an advanced Python-based calculator application designed to showcase my real-world abilities to code while utilizing Git/branching, REPL, and strong software engineering practices.  It integrates a robust REPL (Read-Eval-Print Loop) interface, a plugin system that loads on app initialization automatically, calculation history management using Pandas, and logging.
 
+  [YouTube Video for Presentation](https://youtu.be/y2JEkWHDVeo)
+
 ## Features
 - **Operations:** Supports arithmetic operations: add, subtract, multiply, and divide.
 - **Plugins:** Dynamically loads new commands without modifying the core application.
