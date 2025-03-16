@@ -1,39 +1,41 @@
-"""initializing the app"""
 import sys
 import logging
-import logging.config
 import os
-from dotenv import load_dotenv
-from log.logging_setup import configure_logging  # Import from log folder
+from log.logging_setup import configure_logging
 from app.command_handler import CommandHandler
+from dotenv import load_dotenv
 from plugins.load_plugins import load_plugins
 
 class App:
-    """instantiating the App"""
+    """Instantiating the App class"""
     def __init__(self):
-        """constructor for App class"""
+        """Constructor for App class"""
         os.makedirs('logs', exist_ok=True)
-        configure_logging(self)
-        self.logger = logging.getLogger(__name__)
+        configure_logging(self)  # Updated logging setup
         load_dotenv()
-        self.settings = self.load_environment_variables()  
+        self.settings = self.load_environment_variables()
         self.settings.setdefault('ENVIRONMENT', 'PRODUCTION')
         self.command_handler = CommandHandler()
         load_plugins(self.command_handler)
 
     def start(self):
-        """start the app"""
+        """Start the app"""
         print("Available commands:", list(self.command_handler.commands.keys()))
-        self.logger.info("Application started. Type 'exit' to exit.")       
         print("Supported commands: add, subtract, multiply, divide")
         print("Type 'exit' at any prompt to quit.")
+        
         try:
             while True:
                 cmd_input = input(">>> ").strip().lower()
                 if cmd_input == "exit":
-                    logging.info("Application exit.")
                     print("Exiting!")
                     sys.exit(0)
+                
+                if cmd_input not in self.command_handler.commands:
+                    print(f"Error: Unknown command '{cmd_input}'")
+                    logging.error(f"Unknown command entered: {cmd_input}")
+                    continue  # Move to next input loop
+                
                 try:
                     num1 = float(input("Enter first number: "))
                     num2 = float(input("Enter second number: "))
@@ -43,26 +45,17 @@ class App:
                 except ValueError:
                     print("Error: Please enter valid numbers.")
                     logging.warning(f"Invalid number input for command {cmd_input}")
-                except KeyError:
-                    print(f"Error: Unknown command '{cmd_input}'")
-                    logging.error(f"Unknown command entered: {cmd_input}")
         except KeyboardInterrupt:
-            logging.info("Application interrupted. Exiting")
             print("\nGoodbye!")
             sys.exit(0)
         finally:
             logging.info("Shutting Down")
 
-    def load_environment_variables(self, env_var=None):
-        """Loads environment variables into the settings dictionary.
-        If `env_var` is provided, returns the specific environment variable value.
-        """
+    def load_environment_variables(self):
+        """Loads environment variables into the settings dictionary."""
         settings = {key: value for key, value in os.environ.items()}
-        logging.info("Environment variables loaded.")
-        
-        if env_var:
-            return settings.get(env_var, None)  # Return specific env var if requested
         return settings
+
 if __name__ == "__main__":
     app = App()
     app.start()
