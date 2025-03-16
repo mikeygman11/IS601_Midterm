@@ -1,3 +1,4 @@
+"""Testing the calculator plugins"""
 import sys
 import os
 import pkgutil

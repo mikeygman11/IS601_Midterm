@@ -57,7 +57,7 @@ def test_app_handles_invalid_number(monkeypatch, capsys):
     assert "Error: Please enter valid numbers." in captured.out
 
 def test_app_keyboard_interrupt(monkeypatch, capsys, caplog):
-    """Test if KeyboardInterrupt exits"""
+    """Test if KeyboardInterrupt exits."""
     def mock_input(_):
         raise KeyboardInterrupt
     monkeypatch.setattr("builtins.input", mock_input)

@@ -15,7 +15,6 @@ class Calculations:
     @classmethod
     def add_calculation(cls, calculation: Calculation):
         """Add a new calculation to the history and save it to CSV."""
-        print("DEBUG: Adding calculation to history.")
         cls.history.append(calculation)
         cls.save_history()
 
@@ -73,11 +72,11 @@ class Calculations:
         if os.path.exists(cls.history_file):
             df = pd.read_csv(cls.history_file)
             if df.empty:
-                print("DEBUG: History file is empty.")
+                print("History file is empty.")
             else:
                 # For simplicity, we won't reconstruct Calculation objects.
-                print(f"DEBUG: Loaded {len(df)} history records.")
+                print(f"Loaded {len(df)} history records.")
             return df
         else:
-            print("DEBUG: No history file found.")
+            print("No history file found.")
             return None

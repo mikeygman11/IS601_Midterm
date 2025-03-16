@@ -1,3 +1,4 @@
+"""Testing CommandHandler"""
 import pytest
 from app.command_handler import CommandHandler
 

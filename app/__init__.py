@@ -1,3 +1,4 @@
+"""Starting up application"""
 import sys
 import logging
 import logging.config
@@ -21,21 +22,18 @@ class App:
         self.settings.setdefault('ENVIRONMENT', 'PRODUCTION')
         self.command_handler = CommandHandler()
         load_plugins(self.command_handler)
-        print("DEBUG: Loading history on startup...")
         Calculations.load_history()
 
     def start(self):
         """Start the REPL."""
         print("Available commands:", list(self.command_handler.commands.keys()))
-        print("Supported commands: add, subtract, multiply, divide, history, clear_history, menu")
-        print("Type 'exit' at any prompt to quit.")
-        
+        print("Supported commands: add, subtract, multiply, divide, history, clear, menu, and exit")        
         try:
             while True:
                 cmd_input = input(">>> ").strip().lower()
                 if cmd_input == "exit":
                     logging.info("Application exiting.")
-                    print("Exiting!")
+                    print("Exit")
                     sys.exit(0)
                 elif cmd_input == "menu":
                     self.show_menu()
@@ -43,7 +41,7 @@ class App:
                 elif cmd_input == "history":
                     self.show_history()
                     continue
-                elif cmd_input == "clear_history":
+                elif cmd_input == "clear":
                     self.clear_history()
                     continue
                 elif cmd_input not in self.command_handler.commands:
@@ -62,21 +60,27 @@ class App:
                     print("Error: Please enter valid numbers.")
         except KeyboardInterrupt:
             logging.info("Application interrupted")
-            print("\nGoodbye!")
+            print("\nApplication interrupted")
             sys.exit(0)
         finally:
             logging.info("Shutting Down")
 
     def show_menu(self):
         """Display a menu of available commands."""
-        print("\n--- REPL Menu ---")
-        print("Commands:")
-        for cmd in self.command_handler.commands.keys():
-            print(f"  - {cmd}")
-        print("  - history : View calculation history")
-        print("  - clear_history : Delete calculation history")
-        print("  - menu : Show this menu")
-        print("  - exit : Exit the application\n")
+        menu = (
+            "\n--- REPL Menu ---\n"
+            "Commands:\n"
+            "- add\n"
+            "- subtract\n"
+            "- multiply\n"
+            "- divide\n"
+            "- history\n"
+            "- clear_history\n"
+            "- menu\n"
+            "- exit\n"
+        )
+        print(menu)
+
 
     def show_history(self):
         """Display the calculation history using Pandas."""
