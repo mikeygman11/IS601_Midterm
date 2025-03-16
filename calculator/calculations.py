@@ -45,18 +45,27 @@ class Calculations:
 
     @classmethod
     def save_history(cls):
-        """Save the calculation history to CSV using Pandas."""
+        """Save calculation history to CSV using Pandas."""
         if cls.history:
-            data = [
-                {"a": calc.a, "b": calc.b, "operation": calc.operation.__name__, "result": calc.perform()}
-                for calc in cls.history
-            ]
+            data = []
+            for calc in cls.history:
+                try:
+                    result = calc.perform()
+                except ValueError as e:
+                    result = None  # Record None if the calculation fails (e.g. division by zero)
+                data.append({
+                    "a": calc.a, 
+                    "b": calc.b, 
+                    "operation": calc.operation.__name__, 
+                    "result": result
+                })
             df = pd.DataFrame(data)
             os.makedirs("logs", exist_ok=True)
             df.to_csv(cls.history_file, index=False)
-            print(f"DEBUG: History successfully saved to {cls.history_file}")
+            print(f"History successfully saved to {cls.history_file}")
         else:
-            print("DEBUG: No calculations to save.")
+            print("No calculations to save.")
+
 
     @classmethod
     def load_history(cls):

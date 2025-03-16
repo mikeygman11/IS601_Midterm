@@ -1,5 +1,6 @@
 import sys
 import os
+import pkgutil
 import logging
 import pytest
 from app.command_handler import CommandHandler
@@ -65,3 +66,39 @@ def test_plugins_load_fails(monkeypatch, caplog):
     for record in caplog.records:
         print(f"LOG [{record.levelname}]: {record.message}")
     assert any("Failed to load plugin" in record.message for record in caplog.records)
+
+
+def test_plugins_load_no_register(monkeypatch, caplog):
+    """Test that load_plugins logs a warning if a plugin has no register() function."""
+    caplog.clear()
+    caplog.set_level(logging.WARNING)
+    
+    # Create a dummy plugin module without a register function.
+    class DummyPlugin:
+        pass
+
+    def mock_import_module(name):
+        return DummyPlugin
+
+    # Simulate pkgutil.iter_modules yielding a plugin.
+    def mock_iter_modules(path):
+        yield (None, "dummy_plugin", False)
+    
+    monkeypatch.setattr("importlib.import_module", mock_import_module)
+    monkeypatch.setattr(pkgutil, "iter_modules", mock_iter_modules)
+    
+    handler = CommandHandler()
+    load_plugins(handler)
+    
+    # Check that a warning was logged about the missing register() function.
+    assert any("does not have a register() function" in record.message for record in caplog.records)
+
+def test_plugins_directory_missing(monkeypatch, caplog):
+    """Test that load_plugins logs a warning when the plugins directory is missing."""
+    caplog.clear()
+    caplog.set_level(logging.WARNING)
+    monkeypatch.setattr(os.path, "exists", lambda path: False if "plugins" in path else True)
+    handler = CommandHandler()
+    load_plugins(handler)
+    # Check that a warning about the plugins directory is logged.
+    assert any("Plugins directory" in record.message for record in caplog.records)
