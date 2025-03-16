@@ -23,28 +23,31 @@ This project is an advanced Python-based calculator application designed to show
 - **Simple Interface / Facade Pattern:**  
   The `Calculator` class provides a simplified interface for performing operations. History management and logging are performed by other Python modules (`calculation.py`, `calculations.py`, etc.).
 
-  [a link](https://github.com/mikeygman11/IS601_Midterm/tree/master/calculator)
+  [Calculator implementation](https://github.com/mikeygman11/IS601_Midterm/tree/master/calculator)
 
 - **Command Handler:**  
   The application employs a `CommandHandler` class to register and execute commands and extends functionality.
 
-  [a link](https://github.com/mikeygman11/IS601_Midterm/tree/master/calculator)
+  [Command Handler](https://github.com/mikeygman11/IS601_Midterm/blob/master/app/__init__.py)
   
 - **Factory Pattern:**  
   The `Calculation` instantiates new Calculation instances.
   The calculation history is maintained in the `Calculations` class
+  [Calculations Class](https://github.com/mikeygman11/IS601_Midterm/blob/master/calculator/calculations.py)
 
 ### Plugin System
 - **Dynamic Loading:**  
   Plugins are placed in the `plugins/` folder. The `load_plugins.py` module dynamically loads all plugin modules and calls their `register()` functions to register their commands with the `CommandHandler`
 
   - New operations can be added simply by creating a new plugin module (with a `register()` function) in the `plugins/` folder.
+  [Plugins](https://github.com/mikeygman11/IS601_Midterm/tree/master/plugins)
 
 ### Calculation History Management
 - **Pandas:**  
   The application uses the Pandas library to manage a history of calculations. Each calculation is saved in a CSV file (`logs/calculation_history.csv`) and the logging functionality writes to this csv.  
 - **History Functions:**  
   Users can view, load, save, and clear calculation history through dedicated REPL commands. The `Calculations` class covers history management.
+  [Calculations Class](https://github.com/mikeygman11/IS601_Midterm/blob/master/calculator/calculations.py)
 
 ### Logging Strategy
 - **Logging Configuration:**  
@@ -52,6 +55,26 @@ This project is an advanced Python-based calculator application designed to show
 - **Log File:**  
   Logs are written to `logs/app.log` with messages about warnings, messages, errors, etc
   The logging configuration is covered in `log/logging_setup.py`, which reads from `log/logging.conf`
+  [Logging Setup](https://github.com/mikeygman11/IS601_Midterm/blob/master/log/logging_setup.py)
+
+Environment variables are set by default and dynamically loaded when the program launches, but can be set to the user's preferences.
+[Logging Config](https://github.com/mikeygman11/IS601_Midterm/blob/master/log/logging.conf)
+
+[Here is where the logging configuration and automatic loading of plugins happens](https://github.com/mikeygman11/IS601_Midterm/blob/master/plugins/load_plugins.py)
+
+In command handler, I load env variables by default, but they can be changed in the program or in the .env file. 
+[Here is where the env variable code lives](https://github.com/mikeygman11/IS601_Midterm/blob/master/app/command_handler.py)
+
+In the app initialization, I use try-catch blocks to run the calculator indefinetely unless you come across an issue with an unrecognized command (EAFP)
+
+[This is shown here](https://github.com/mikeygman11/IS601_Midterm/blob/master/app/__init__.py)
+
+It can also be seen when loading plugins where I load the plugin and handle errors loading if there is an issue, rather than checking if the plugin exists first.
+[This is shown here](https://github.com/mikeygman11/IS601_Midterm/blob/master/app/__init__.py)
+
+Finally, I implement LYBL in the divide function, when I check for division by 0 errors before executing.
+[Division by 0](https://github.com/mikeygman11/IS601_Midterm/blob/master/plugins/divide_plugin.py)
+
 
 ## Setup and Installation
 
