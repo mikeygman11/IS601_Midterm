@@ -62,10 +62,13 @@ This project is an advanced Python-based calculator application designed to show
    git clone https://github.com/mikeygman11/IS601_CalcApp.git
    cd IS601_CalcApp
 2. **Create Virtual Env:**
+```bash 
 python -m venv venv
-# On Linux/Mac:
+```
+On Linux/Mac:
 source venv/bin/activate
-# On Windows:
+
+On Windows:
 venv\Scripts\activate
 3. **Install Needed Dependencies:**
 pip install -r requirements.txt
