@@ -107,16 +107,38 @@ Perform operations: Use commands like add, subtract, multiply, divide.
 Manage history: Use history to view, and clear to delete the calculator history.
 Display commands: Use menu to list available commands.
 Exit: Use exit to terminate the application.
+## Example Usage
 
-6. **Example Usage"**
+```cmd
+Loaded environment variables.
+Loaded 12 history records.
 
-Enter first number: 45
-Enter second number: 3
+--- Welcome to Mike's calculator app ---
+Arithmetic operations include: add, subtract, multiply, divide.
+Other commands to choose from: history, clear, menu. Type exit to terminate the application
+
+>>> add
+Enter first number: 20
+Enter second number: 5
 History successfully saved to logs/calculation_history.csv
-Result: 48.0
+Result: 25.0
+
+>>> divide
+Enter first number: 454
+Enter second number: 2
+History successfully saved to logs/calculation_history.csv
+Result: 227.0
 
 >>> history
 
 --- Calculation History ---
-      a    b operation  result
-0  45.0  3.0       add    48.0
+Calculation(20.0, 5.0, add)
+Calculation(454.0, 2.0, divide)
+
+>>> clear
+
+Calculation history cleared.
+
+>>> exit
+Exit
+```
