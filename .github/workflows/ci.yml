@@ -1,0 +1,31 @@
+name: Run Tests and Linting
+
+on: [push, pull_request]  # Runs on push and pull requests
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.8"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pytest pytest-cov pylint
+
+      - name: Run tests with coverage
+        run: |
+          pytest --cov=app --cov=calculator --cov=plugins --cov-report=term-missing > coverage.txt
+          cat coverage.txt  # Show coverage in logs
+
+      - name: Run pylint
+        run: |
+          pylint app calculator plugins --exit-zero > pylint_report.txt
+          cat pylint_report.txt  # Show pylint report in logs
