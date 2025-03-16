@@ -25,7 +25,7 @@ def test_show_menu(capsys):
     captured = capsys.readouterr().out
     assert "Commands:" in captured
     assert "- history" in captured
-    assert "- clear_history" in captured
+    assert "- clear" in captured
     assert "- menu" in captured
 
 def test_show_history_no_file(capsys):

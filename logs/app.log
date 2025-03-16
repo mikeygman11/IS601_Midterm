@@ -18,3 +18,16 @@
 2025-03-15 23:23:35,833 - INFO - Executed divide with inputs 10.0 and 2.0: Result 5.0
 2025-03-15 23:23:56,887 - INFO - Application exiting.
 2025-03-15 23:23:56,887 - INFO - Shutting Down
+2025-03-16 09:33:41,285 - INFO - Environment variables loaded.
+2025-03-16 09:33:41,286 - INFO - Environment variables loaded.
+2025-03-16 09:33:41,286 - INFO - Loading plugins...
+2025-03-16 09:33:41,287 - INFO - Plugin 'add_plugin' registered successfully.
+2025-03-16 09:33:41,287 - INFO - Plugin 'clear_plugin' registered successfully.
+2025-03-16 09:33:41,287 - INFO - Plugin 'divide_plugin' registered successfully.
+2025-03-16 09:33:41,288 - INFO - Plugin 'history_plugin' registered successfully.
+2025-03-16 09:33:41,290 - INFO - Plugin 'menu_plugin' registered successfully.
+2025-03-16 09:33:41,290 - INFO - Plugin 'multiply_plugin' registered successfully.
+2025-03-16 09:33:41,290 - INFO - Plugin 'subtract_plugin' registered successfully.
+2025-03-16 09:33:44,270 - INFO - Executed add with inputs 3.0 and 4.0: Result 7.0
+2025-03-16 09:33:45,201 - INFO - Application interrupted
+2025-03-16 09:33:45,201 - INFO - Shutting Down
