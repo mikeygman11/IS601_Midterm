@@ -1,7 +1,6 @@
 """Starting up application"""
 import sys
 import logging
-import logging.config
 import os
 from log.logging_setup import configure_logging
 from app.command_handler import CommandHandler
@@ -12,37 +11,37 @@ import pandas as pd
 
 class App:
     """Main application class that handles REPL, history, and configuration."""
+
     def __init__(self):
         """Initialize the App."""
         os.makedirs('logs', exist_ok=True)
         configure_logging(self)
         self.logger = logging.getLogger(__name__)
+        
         load_dotenv()
         self.settings = self.load_environment_variables()
         self.settings.setdefault('ENVIRONMENT', 'PRODUCTION')
+
         self.command_handler = CommandHandler()
         load_plugins(self.command_handler)
+        
+        # Load calculation history from file
         Calculations.load_history()
 
     def start(self):
         """Start the REPL."""
-        print("Available commands:", list(self.command_handler.commands.keys()))
-        print("Supported commands: add, subtract, multiply, divide, history, clear, menu, and exit")        
+        print("\n--- Welcome to the Calculator REPL ---")
+        print("Supported commands: add, subtract, multiply, divide, history, clear_history, menu, load_env, exit")
+        
         try:
             while True:
                 cmd_input = input(">>> ").strip().lower()
                 if cmd_input == "exit":
                     logging.info("Application exiting.")
-                    print("Exit")
+                    print("Exiting...")
                     sys.exit(0)
-                elif cmd_input == "menu":
-                    self.show_menu()
-                    continue
-                elif cmd_input == "history":
-                    self.show_history()
-                    continue
-                elif cmd_input == "clear":
-                    self.clear_history()
+                elif cmd_input in ["menu", "history", "clear_history", "load_env"]:
+                    self.command_handler.execute_command(cmd_input)
                     continue
                 elif cmd_input not in self.command_handler.commands:
                     logging.error("Unknown command entered: %s", cmd_input)
@@ -64,41 +63,6 @@ class App:
             sys.exit(0)
         finally:
             logging.info("Shutting Down")
-
-    def show_menu(self):
-        """Display a menu of available commands."""
-        menu = (
-            "\n--- REPL Menu ---\n"
-            "Commands:\n"
-            "- add\n"
-            "- subtract\n"
-            "- multiply\n"
-            "- divide\n"
-            "- history\n"
-            "- clear_history\n"
-            "- menu\n"
-            "- exit\n"
-        )
-        print(menu)
-
-
-    def show_history(self):
-        """Display the calculation history using Pandas."""
-        history_file = Calculations.history_file
-        if os.path.exists(history_file):
-            df = pd.read_csv(history_file)
-            if df.empty:
-                print("\nNo history found.")
-            else:
-                print("\n--- Calculation History ---")
-                print(df)
-        else:
-            print("\nNo history found.")
-
-    def clear_history(self):
-        """Clear the calculation history."""
-        Calculations.clear_history()
-        print("\nCalculation history cleared.")
 
     def load_environment_variables(self):
         """Load environment variables into a dictionary."""

@@ -1,8 +1,9 @@
+"""testing the calculation methods"""
+from decimal import Decimal
 import pytest
 from calculator.calculations import Calculations
 from calculator.calculation import Calculation
 from calculator.operations import add, subtract, multiply, divide
-from decimal import Decimal
 
 @pytest.fixture(autouse=True)
 def clear_history():

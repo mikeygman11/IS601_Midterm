@@ -1,6 +1,7 @@
-import pytest
+"""Testing run of app"""
 import os
 import logging
+import pytest
 from app import App
 
 def test_app_initialization():

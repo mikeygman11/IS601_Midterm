@@ -445,3 +445,57 @@
 2025-03-15 21:58:08,484 - INFO - Executed add with inputs 45.0 and 3.0: Result 48.0
 2025-03-15 21:58:47,963 - INFO - Application interrupted
 2025-03-15 21:58:47,963 - INFO - Shutting Down
+2025-03-15 22:00:31,611 - INFO - Environment variables loaded.
+2025-03-15 22:00:31,611 - INFO - Loading plugins...
+2025-03-15 22:00:31,613 - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 22:00:31,615 - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 22:00:31,616 - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 22:00:31,618 - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 22:00:36,344 - INFO - Executed add with inputs 2.0 and 23.0: Result 25.0
+2025-03-15 22:00:55,302 - INFO - Application interrupted
+2025-03-15 22:00:55,302 - INFO - Shutting Down
+2025-03-15 22:09:26,043 - INFO - Environment variables loaded.
+2025-03-15 22:09:26,044 - INFO - Environment variables loaded.
+2025-03-15 22:09:26,044 - INFO - Loading plugins...
+2025-03-15 22:09:26,045 - INFO - Plugin 'add_plugin' registered successfully.
+2025-03-15 22:09:26,046 - INFO - Plugin 'clear_plugin' registered successfully.
+2025-03-15 22:09:26,046 - INFO - Plugin 'divide_plugin' registered successfully.
+2025-03-15 22:09:26,047 - INFO - Plugin 'history_plugin' registered successfully.
+2025-03-15 22:09:26,049 - INFO - Plugin 'menu_plugin' registered successfully.
+2025-03-15 22:09:26,049 - INFO - Plugin 'multiply_plugin' registered successfully.
+2025-03-15 22:09:26,049 - INFO - Plugin 'subtract_plugin' registered successfully.
+2025-03-15 22:09:29,340 - INFO - Executed add with inputs 4.0 and 2.0: Result 6.0
+2025-03-15 22:09:42,922 - ERROR - Unknown command entered: show
+2025-03-15 22:09:45,075 - ERROR - Unknown command entered: f
+2025-03-15 22:10:12,246 - INFO - Executed divide with inputs 4.0 and 2.0: Result 2.0
+2025-03-15 22:10:23,556 - ERROR - Unknown command entered: clear
+2025-03-15 22:10:31,468 - INFO - Application interrupted
+2025-03-15 22:10:31,468 - INFO - Shutting Down
+2025-03-15 22:11:21,260 - INFO - Environment variables loaded.
+2025-03-15 22:11:21,260 - INFO - Environment variables loaded.
+2025-03-15 22:11:21,261 - INFO - Loading plugins...
+2025-03-15 22:11:21,261 - INFO - Plugin 'add_plugin' registered successfully.
+2025-03-15 22:11:21,261 - INFO - Plugin 'clear_plugin' registered successfully.
+2025-03-15 22:11:21,262 - INFO - Plugin 'divide_plugin' registered successfully.
+2025-03-15 22:11:21,263 - INFO - Plugin 'history_plugin' registered successfully.
+2025-03-15 22:11:21,264 - INFO - Plugin 'menu_plugin' registered successfully.
+2025-03-15 22:11:21,264 - INFO - Plugin 'multiply_plugin' registered successfully.
+2025-03-15 22:11:21,264 - INFO - Plugin 'subtract_plugin' registered successfully.
+2025-03-15 22:11:24,550 - INFO - Shutting Down
+2025-03-15 22:11:39,659 - INFO - Environment variables loaded.
+2025-03-15 22:11:39,660 - INFO - Environment variables loaded.
+2025-03-15 22:11:39,660 - INFO - Loading plugins...
+2025-03-15 22:11:39,661 - INFO - Plugin 'add_plugin' registered successfully.
+2025-03-15 22:11:39,661 - INFO - Plugin 'clear_plugin' registered successfully.
+2025-03-15 22:11:39,661 - INFO - Plugin 'divide_plugin' registered successfully.
+2025-03-15 22:11:39,662 - INFO - Plugin 'history_plugin' registered successfully.
+2025-03-15 22:11:39,662 - INFO - Plugin 'menu_plugin' registered successfully.
+2025-03-15 22:11:39,662 - INFO - Plugin 'multiply_plugin' registered successfully.
+2025-03-15 22:11:39,663 - INFO - Plugin 'subtract_plugin' registered successfully.
+2025-03-15 22:11:41,142 - WARNING - Invalid number input for command add
+2025-03-15 22:11:42,239 - ERROR - Unknown command entered: 2
+2025-03-15 22:11:42,605 - ERROR - Unknown command entered: 3
+2025-03-15 22:11:45,305 - INFO - Executed add with inputs 56.0 and 3.0: Result 59.0
+2025-03-15 22:11:47,814 - ERROR - Unknown command entered: clear
+2025-03-15 22:12:22,070 - INFO - Application interrupted
+2025-03-15 22:12:22,070 - INFO - Shutting Down
