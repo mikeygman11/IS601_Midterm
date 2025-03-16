@@ -1,0 +1,337 @@
+2025-03-15 20:42:07 - plugins.load_plugins - INFO - Loading plugins...
+2025-03-15 20:42:07 - plugins.load_plugins - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 20:42:07 - plugins.load_plugins - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 20:42:07 - plugins.load_plugins - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 20:42:07 - plugins.load_plugins - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 20:42:07 - plugins.load_plugins - INFO - Loading plugins...
+2025-03-15 20:42:07 - plugins.load_plugins - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 20:42:07 - plugins.load_plugins - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 20:42:07 - plugins.load_plugins - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 20:42:07 - plugins.load_plugins - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 20:42:07 - plugins.load_plugins - INFO - Loading plugins...
+2025-03-15 20:42:07 - plugins.load_plugins - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 20:42:07 - plugins.load_plugins - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 20:42:07 - plugins.load_plugins - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 20:42:07 - plugins.load_plugins - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 20:42:07 - root - ERROR - Unknown command entered: invalid_command
+2025-03-15 20:42:07 - root - INFO - Shutting Down
+2025-03-15 20:42:07 - plugins.load_plugins - INFO - Loading plugins...
+2025-03-15 20:42:07 - plugins.load_plugins - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 20:42:07 - plugins.load_plugins - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 20:42:07 - plugins.load_plugins - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 20:42:07 - plugins.load_plugins - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 20:42:07 - root - WARNING - Invalid number input for command add
+2025-03-15 20:42:07 - root - ERROR - Unknown command entered: 3
+2025-03-15 20:42:07 - root - INFO - Shutting Down
+2025-03-15 20:42:07 - plugins.load_plugins - INFO - Loading plugins...
+2025-03-15 20:42:07 - plugins.load_plugins - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 20:42:07 - plugins.load_plugins - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 20:42:07 - plugins.load_plugins - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 20:42:07 - plugins.load_plugins - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 20:42:07 - root - INFO - Shutting Down
+2025-03-15 20:42:07 - plugins.load_plugins - INFO - Loading plugins...
+2025-03-15 20:42:07 - plugins.load_plugins - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 20:42:07 - plugins.load_plugins - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 20:42:07 - plugins.load_plugins - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 20:42:07 - plugins.load_plugins - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 20:42:07 - root - INFO - Shutting Down
+2025-03-15 20:42:07 - plugins.load_plugins - INFO - Loading plugins...
+2025-03-15 20:42:07 - plugins.load_plugins - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 20:42:07 - plugins.load_plugins - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 20:42:07 - plugins.load_plugins - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 20:42:07 - plugins.load_plugins - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 20:42:07 - plugins.load_plugins - ERROR - Failed to load plugin 'add_plugin': Mocked ImportError
+2025-03-15 20:42:07 - plugins.load_plugins - ERROR - Failed to load plugin 'divide_plugin': Mocked ImportError
+2025-03-15 20:42:07 - plugins.load_plugins - ERROR - Failed to load plugin 'multiply_plugin': Mocked ImportError
+2025-03-15 20:42:07 - plugins.load_plugins - ERROR - Failed to load plugin 'subtract_plugin': Mocked ImportError
+2025-03-15 20:43:12 - plugins.load_plugins - INFO - Loading plugins...
+2025-03-15 20:43:12 - plugins.load_plugins - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 20:43:12 - plugins.load_plugins - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 20:43:12 - plugins.load_plugins - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 20:43:12 - plugins.load_plugins - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 20:43:12 - plugins.load_plugins - INFO - Loading plugins...
+2025-03-15 20:43:12 - plugins.load_plugins - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 20:43:12 - plugins.load_plugins - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 20:43:12 - plugins.load_plugins - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 20:43:12 - plugins.load_plugins - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 20:43:12 - plugins.load_plugins - INFO - Loading plugins...
+2025-03-15 20:43:12 - plugins.load_plugins - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 20:43:12 - plugins.load_plugins - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 20:43:12 - plugins.load_plugins - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 20:43:12 - plugins.load_plugins - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 20:43:12 - root - ERROR - Unknown command entered: invalid_command
+2025-03-15 20:43:12 - root - INFO - Shutting Down
+2025-03-15 20:43:12 - plugins.load_plugins - INFO - Loading plugins...
+2025-03-15 20:43:12 - plugins.load_plugins - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 20:43:12 - plugins.load_plugins - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 20:43:12 - plugins.load_plugins - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 20:43:12 - plugins.load_plugins - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 20:43:12 - root - WARNING - Invalid number input for command add
+2025-03-15 20:43:12 - root - ERROR - Unknown command entered: 3
+2025-03-15 20:43:12 - root - INFO - Shutting Down
+2025-03-15 20:43:12 - plugins.load_plugins - INFO - Loading plugins...
+2025-03-15 20:43:12 - plugins.load_plugins - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 20:43:12 - plugins.load_plugins - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 20:43:12 - plugins.load_plugins - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 20:43:12 - plugins.load_plugins - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 20:43:12 - root - INFO - Shutting Down
+2025-03-15 20:43:12 - plugins.load_plugins - INFO - Loading plugins...
+2025-03-15 20:43:12 - plugins.load_plugins - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 20:43:12 - plugins.load_plugins - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 20:43:12 - plugins.load_plugins - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 20:43:12 - plugins.load_plugins - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 20:43:12 - root - INFO - Shutting Down
+2025-03-15 20:43:12 - plugins.load_plugins - INFO - Loading plugins...
+2025-03-15 20:43:12 - plugins.load_plugins - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 20:43:12 - plugins.load_plugins - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 20:43:12 - plugins.load_plugins - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 20:43:12 - plugins.load_plugins - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 20:43:12 - plugins.load_plugins - ERROR - Failed to load plugin 'add_plugin': Mocked ImportError
+2025-03-15 20:43:12 - plugins.load_plugins - ERROR - Failed to load plugin 'divide_plugin': Mocked ImportError
+2025-03-15 20:43:12 - plugins.load_plugins - ERROR - Failed to load plugin 'multiply_plugin': Mocked ImportError
+2025-03-15 20:43:12 - plugins.load_plugins - ERROR - Failed to load plugin 'subtract_plugin': Mocked ImportError
+2025-03-15 20:43:47 - plugins.load_plugins - INFO - Loading plugins...
+2025-03-15 20:43:47 - plugins.load_plugins - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 20:43:47 - plugins.load_plugins - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 20:43:47 - plugins.load_plugins - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 20:43:47 - plugins.load_plugins - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 20:43:47 - plugins.load_plugins - INFO - Loading plugins...
+2025-03-15 20:43:47 - plugins.load_plugins - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 20:43:47 - plugins.load_plugins - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 20:43:47 - plugins.load_plugins - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 20:43:47 - plugins.load_plugins - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 20:43:47 - plugins.load_plugins - INFO - Loading plugins...
+2025-03-15 20:43:47 - plugins.load_plugins - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 20:43:47 - plugins.load_plugins - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 20:43:47 - plugins.load_plugins - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 20:43:47 - plugins.load_plugins - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 20:43:47 - root - ERROR - Unknown command entered: invalid_command
+2025-03-15 20:43:47 - root - INFO - Application exiting
+2025-03-15 20:43:47 - root - INFO - Shutting Down
+2025-03-15 20:43:47 - plugins.load_plugins - INFO - Loading plugins...
+2025-03-15 20:43:47 - plugins.load_plugins - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 20:43:47 - plugins.load_plugins - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 20:43:47 - plugins.load_plugins - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 20:43:47 - plugins.load_plugins - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 20:43:47 - root - WARNING - Invalid number input for command add
+2025-03-15 20:43:47 - root - ERROR - Unknown command entered: 3
+2025-03-15 20:43:47 - root - INFO - Application exiting
+2025-03-15 20:43:47 - root - INFO - Shutting Down
+2025-03-15 20:43:47 - plugins.load_plugins - INFO - Loading plugins...
+2025-03-15 20:43:47 - plugins.load_plugins - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 20:43:47 - plugins.load_plugins - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 20:43:47 - plugins.load_plugins - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 20:43:47 - plugins.load_plugins - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 20:43:47 - root - INFO - Shutting Down
+2025-03-15 20:43:47 - plugins.load_plugins - INFO - Loading plugins...
+2025-03-15 20:43:47 - plugins.load_plugins - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 20:43:47 - plugins.load_plugins - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 20:43:47 - plugins.load_plugins - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 20:43:47 - plugins.load_plugins - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 20:43:47 - root - INFO - Application exiting
+2025-03-15 20:43:47 - root - INFO - Shutting Down
+2025-03-15 20:43:47 - plugins.load_plugins - INFO - Loading plugins...
+2025-03-15 20:43:47 - plugins.load_plugins - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 20:43:47 - plugins.load_plugins - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 20:43:47 - plugins.load_plugins - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 20:43:47 - plugins.load_plugins - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 20:43:47 - plugins.load_plugins - ERROR - Failed to load plugin 'add_plugin': Mocked ImportError
+2025-03-15 20:43:47 - plugins.load_plugins - ERROR - Failed to load plugin 'divide_plugin': Mocked ImportError
+2025-03-15 20:43:47 - plugins.load_plugins - ERROR - Failed to load plugin 'multiply_plugin': Mocked ImportError
+2025-03-15 20:43:47 - plugins.load_plugins - ERROR - Failed to load plugin 'subtract_plugin': Mocked ImportError
+2025-03-15 20:43:57 - plugins.load_plugins - INFO - Loading plugins...
+2025-03-15 20:43:57 - plugins.load_plugins - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 20:43:57 - plugins.load_plugins - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 20:43:57 - plugins.load_plugins - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 20:43:57 - plugins.load_plugins - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 20:43:57 - plugins.load_plugins - INFO - Loading plugins...
+2025-03-15 20:43:57 - plugins.load_plugins - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 20:43:57 - plugins.load_plugins - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 20:43:57 - plugins.load_plugins - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 20:43:57 - plugins.load_plugins - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 20:43:57 - plugins.load_plugins - INFO - Loading plugins...
+2025-03-15 20:43:57 - plugins.load_plugins - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 20:43:57 - plugins.load_plugins - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 20:43:57 - plugins.load_plugins - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 20:43:57 - plugins.load_plugins - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 20:43:57 - root - ERROR - Unknown command entered: invalid_command
+2025-03-15 20:43:57 - root - INFO - Application interrupted
+2025-03-15 20:43:57 - root - INFO - Shutting Down
+2025-03-15 20:43:57 - plugins.load_plugins - INFO - Loading plugins...
+2025-03-15 20:43:57 - plugins.load_plugins - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 20:43:57 - plugins.load_plugins - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 20:43:57 - plugins.load_plugins - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 20:43:57 - plugins.load_plugins - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 20:43:57 - root - WARNING - Invalid number input for command add
+2025-03-15 20:43:57 - root - ERROR - Unknown command entered: 3
+2025-03-15 20:43:57 - root - INFO - Application interrupted
+2025-03-15 20:43:57 - root - INFO - Shutting Down
+2025-03-15 20:43:57 - plugins.load_plugins - INFO - Loading plugins...
+2025-03-15 20:43:57 - plugins.load_plugins - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 20:43:57 - plugins.load_plugins - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 20:43:57 - plugins.load_plugins - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 20:43:57 - plugins.load_plugins - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 20:43:57 - root - INFO - Shutting Down
+2025-03-15 20:43:57 - plugins.load_plugins - INFO - Loading plugins...
+2025-03-15 20:43:57 - plugins.load_plugins - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 20:43:57 - plugins.load_plugins - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 20:43:57 - plugins.load_plugins - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 20:43:57 - plugins.load_plugins - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 20:43:57 - root - INFO - Application interrupted
+2025-03-15 20:43:57 - root - INFO - Shutting Down
+2025-03-15 20:43:57 - plugins.load_plugins - INFO - Loading plugins...
+2025-03-15 20:43:57 - plugins.load_plugins - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 20:43:57 - plugins.load_plugins - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 20:43:57 - plugins.load_plugins - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 20:43:57 - plugins.load_plugins - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 20:43:57 - plugins.load_plugins - ERROR - Failed to load plugin 'add_plugin': Mocked ImportError
+2025-03-15 20:43:57 - plugins.load_plugins - ERROR - Failed to load plugin 'divide_plugin': Mocked ImportError
+2025-03-15 20:43:57 - plugins.load_plugins - ERROR - Failed to load plugin 'multiply_plugin': Mocked ImportError
+2025-03-15 20:43:57 - plugins.load_plugins - ERROR - Failed to load plugin 'subtract_plugin': Mocked ImportError
+2025-03-15 20:44:56 - plugins.load_plugins - INFO - Loading plugins...
+2025-03-15 20:44:56 - plugins.load_plugins - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 20:44:56 - plugins.load_plugins - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 20:44:56 - plugins.load_plugins - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 20:44:56 - plugins.load_plugins - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 20:44:56 - plugins.load_plugins - INFO - Loading plugins...
+2025-03-15 20:44:56 - plugins.load_plugins - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 20:44:56 - plugins.load_plugins - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 20:44:56 - plugins.load_plugins - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 20:44:56 - plugins.load_plugins - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 20:44:56 - plugins.load_plugins - INFO - Loading plugins...
+2025-03-15 20:44:56 - plugins.load_plugins - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 20:44:56 - plugins.load_plugins - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 20:44:56 - plugins.load_plugins - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 20:44:56 - plugins.load_plugins - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 20:44:56 - root - ERROR - Unknown command entered: invalid_command
+2025-03-15 20:44:56 - root - INFO - Application interrupted
+2025-03-15 20:44:56 - root - INFO - Shutting Down
+2025-03-15 20:44:56 - plugins.load_plugins - INFO - Loading plugins...
+2025-03-15 20:44:56 - plugins.load_plugins - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 20:44:56 - plugins.load_plugins - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 20:44:56 - plugins.load_plugins - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 20:44:56 - plugins.load_plugins - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 20:44:56 - root - WARNING - Invalid number input for command add
+2025-03-15 20:44:56 - root - ERROR - Unknown command entered: 3
+2025-03-15 20:44:56 - root - INFO - Application interrupted
+2025-03-15 20:44:56 - root - INFO - Shutting Down
+2025-03-15 20:44:56 - plugins.load_plugins - INFO - Loading plugins...
+2025-03-15 20:44:56 - plugins.load_plugins - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 20:44:56 - plugins.load_plugins - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 20:44:56 - plugins.load_plugins - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 20:44:56 - plugins.load_plugins - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 20:44:56 - root - INFO - Shutting Down
+2025-03-15 20:44:56 - plugins.load_plugins - INFO - Loading plugins...
+2025-03-15 20:44:56 - plugins.load_plugins - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 20:44:56 - plugins.load_plugins - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 20:44:56 - plugins.load_plugins - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 20:44:56 - plugins.load_plugins - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 20:44:56 - root - INFO - Application interrupted
+2025-03-15 20:44:56 - root - INFO - Shutting Down
+2025-03-15 20:44:56 - plugins.load_plugins - INFO - Loading plugins...
+2025-03-15 20:44:56 - plugins.load_plugins - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 20:44:56 - plugins.load_plugins - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 20:44:56 - plugins.load_plugins - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 20:44:56 - plugins.load_plugins - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 20:44:56 - plugins.load_plugins - ERROR - Failed to load plugin 'add_plugin': Mocked ImportError
+2025-03-15 20:44:56 - plugins.load_plugins - ERROR - Failed to load plugin 'divide_plugin': Mocked ImportError
+2025-03-15 20:44:56 - plugins.load_plugins - ERROR - Failed to load plugin 'multiply_plugin': Mocked ImportError
+2025-03-15 20:44:56 - plugins.load_plugins - ERROR - Failed to load plugin 'subtract_plugin': Mocked ImportError
+2025-03-15 20:45:04 - plugins.load_plugins - INFO - Loading plugins...
+2025-03-15 20:45:04 - plugins.load_plugins - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 20:45:04 - plugins.load_plugins - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 20:45:04 - plugins.load_plugins - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 20:45:04 - plugins.load_plugins - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 20:45:04 - plugins.load_plugins - INFO - Loading plugins...
+2025-03-15 20:45:04 - plugins.load_plugins - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 20:45:04 - plugins.load_plugins - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 20:45:04 - plugins.load_plugins - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 20:45:04 - plugins.load_plugins - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 20:45:04 - plugins.load_plugins - INFO - Loading plugins...
+2025-03-15 20:45:04 - plugins.load_plugins - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 20:45:04 - plugins.load_plugins - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 20:45:04 - plugins.load_plugins - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 20:45:04 - plugins.load_plugins - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 20:45:04 - root - ERROR - Unknown command entered: invalid_command
+2025-03-15 20:45:04 - root - INFO - Application interrupted
+2025-03-15 20:45:04 - root - INFO - Shutting Down
+2025-03-15 20:45:04 - plugins.load_plugins - INFO - Loading plugins...
+2025-03-15 20:45:04 - plugins.load_plugins - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 20:45:04 - plugins.load_plugins - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 20:45:04 - plugins.load_plugins - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 20:45:04 - plugins.load_plugins - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 20:45:04 - root - WARNING - Invalid number input for command add
+2025-03-15 20:45:04 - root - ERROR - Unknown command entered: 3
+2025-03-15 20:45:04 - root - INFO - Application interrupted
+2025-03-15 20:45:04 - root - INFO - Shutting Down
+2025-03-15 20:45:04 - plugins.load_plugins - INFO - Loading plugins...
+2025-03-15 20:45:04 - plugins.load_plugins - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 20:45:04 - plugins.load_plugins - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 20:45:04 - plugins.load_plugins - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 20:45:04 - plugins.load_plugins - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 20:45:04 - root - INFO - Shutting Down
+2025-03-15 20:45:04 - plugins.load_plugins - INFO - Loading plugins...
+2025-03-15 20:45:04 - plugins.load_plugins - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 20:45:04 - plugins.load_plugins - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 20:45:04 - plugins.load_plugins - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 20:45:04 - plugins.load_plugins - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 20:45:04 - root - INFO - Application interrupted
+2025-03-15 20:45:04 - root - INFO - Shutting Down
+2025-03-15 20:45:04 - plugins.load_plugins - INFO - Loading plugins...
+2025-03-15 20:45:04 - plugins.load_plugins - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 20:45:04 - plugins.load_plugins - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 20:45:04 - plugins.load_plugins - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 20:45:04 - plugins.load_plugins - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 20:45:04 - plugins.load_plugins - ERROR - Failed to load plugin 'add_plugin': Mocked ImportError
+2025-03-15 20:45:04 - plugins.load_plugins - ERROR - Failed to load plugin 'divide_plugin': Mocked ImportError
+2025-03-15 20:45:04 - plugins.load_plugins - ERROR - Failed to load plugin 'multiply_plugin': Mocked ImportError
+2025-03-15 20:45:04 - plugins.load_plugins - ERROR - Failed to load plugin 'subtract_plugin': Mocked ImportError
+2025-03-15 20:45:25 - plugins.load_plugins - INFO - Loading plugins...
+2025-03-15 20:45:25 - plugins.load_plugins - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 20:45:25 - plugins.load_plugins - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 20:45:25 - plugins.load_plugins - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 20:45:25 - plugins.load_plugins - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 20:45:25 - plugins.load_plugins - INFO - Loading plugins...
+2025-03-15 20:45:25 - plugins.load_plugins - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 20:45:25 - plugins.load_plugins - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 20:45:25 - plugins.load_plugins - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 20:45:25 - plugins.load_plugins - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 20:45:25 - plugins.load_plugins - INFO - Loading plugins...
+2025-03-15 20:45:25 - plugins.load_plugins - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 20:45:25 - plugins.load_plugins - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 20:45:25 - plugins.load_plugins - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 20:45:25 - plugins.load_plugins - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 20:45:25 - root - ERROR - Unknown command entered: invalid_command
+2025-03-15 20:45:25 - root - INFO - Application interrupted
+2025-03-15 20:45:25 - root - INFO - Shutting Down
+2025-03-15 20:45:25 - plugins.load_plugins - INFO - Loading plugins...
+2025-03-15 20:45:25 - plugins.load_plugins - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 20:45:25 - plugins.load_plugins - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 20:45:25 - plugins.load_plugins - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 20:45:25 - plugins.load_plugins - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 20:45:25 - root - WARNING - Invalid number input for command add
+2025-03-15 20:45:25 - root - ERROR - Unknown command entered: 3
+2025-03-15 20:45:25 - root - INFO - Application interrupted
+2025-03-15 20:45:25 - root - INFO - Shutting Down
+2025-03-15 20:45:25 - plugins.load_plugins - INFO - Loading plugins...
+2025-03-15 20:45:25 - plugins.load_plugins - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 20:45:25 - plugins.load_plugins - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 20:45:25 - plugins.load_plugins - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 20:45:25 - plugins.load_plugins - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 20:45:25 - root - INFO - Shutting Down
+2025-03-15 20:45:25 - plugins.load_plugins - INFO - Loading plugins...
+2025-03-15 20:45:25 - plugins.load_plugins - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 20:45:25 - plugins.load_plugins - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 20:45:25 - plugins.load_plugins - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 20:45:25 - plugins.load_plugins - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 20:45:25 - root - INFO - Application interrupted
+2025-03-15 20:45:25 - root - INFO - Shutting Down
+2025-03-15 20:45:25 - plugins.load_plugins - INFO - Loading plugins...
+2025-03-15 20:45:25 - plugins.load_plugins - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 20:45:25 - plugins.load_plugins - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 20:45:25 - plugins.load_plugins - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 20:45:25 - plugins.load_plugins - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 20:45:25 - plugins.load_plugins - ERROR - Failed to load plugin 'add_plugin': Mocked ImportError
+2025-03-15 20:45:25 - plugins.load_plugins - ERROR - Failed to load plugin 'divide_plugin': Mocked ImportError
+2025-03-15 20:45:25 - plugins.load_plugins - ERROR - Failed to load plugin 'multiply_plugin': Mocked ImportError
+2025-03-15 20:45:25 - plugins.load_plugins - ERROR - Failed to load plugin 'subtract_plugin': Mocked ImportError

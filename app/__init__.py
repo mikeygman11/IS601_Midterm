@@ -28,6 +28,7 @@ class App:
             while True:
                 cmd_input = input(">>> ").strip().lower()
                 if cmd_input == "exit":
+                    logging.info("Application interrupted")
                     print("Exiting!")
                     sys.exit(0)
                 
