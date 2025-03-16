@@ -1,8 +1,8 @@
 """Testing calculator program"""
 import sys
 import os
-import pytest
 from decimal import Decimal
+import pytest
 from calculator import Calculator
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 

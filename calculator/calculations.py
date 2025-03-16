@@ -2,9 +2,9 @@
 This module manages a history of calculations using Pandas.
 Calculations are stored in a CSV file so that the history persists across sessions.
 """
-import pandas as pd
 import os
 from typing import List
+import pandas as pd
 from calculator.calculation import Calculation
 
 class Calculations:

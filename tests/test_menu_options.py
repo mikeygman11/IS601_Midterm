@@ -6,7 +6,6 @@ from app import App
 from calculator.calculations import Calculations
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
-# Fixture to clear calculation history before each test.
 @pytest.fixture(autouse=True)
 def clear_calc_history():
     """Clears the calculation history and removes the history file if it exists."""
@@ -15,13 +14,10 @@ def clear_calc_history():
     if os.path.exists(history_file):
         os.remove(history_file)
 
-# --- Tests for App's REPL commands ---
-
 def test_show_menu(capsys):
     """Test that the REPL menu command prints available commands."""
     app = App()
-    app.command_handler.execute_command("menu")  # Call the menu plugin through the CommandHandler.
-    
+    app.command_handler.execute_command("menu")
     captured = capsys.readouterr().out
     assert "Commands:" in captured
     assert "- history" in captured
@@ -41,7 +37,6 @@ def test_clear_history(capsys):
     # Simulate a calculation to create a history file
     from calculator.calculation import Calculation
     from calculator.operations import add
-    
     calc = Calculation.create(4, 2, add)
     Calculations.add_calculation(calc)
     
