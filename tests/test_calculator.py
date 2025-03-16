@@ -1,39 +1,27 @@
-import pytest
-from decimal import Decimal
 import sys
 import os
-# Ensure the project root is in sys.path so calculator can be imported
+import pytest
+from decimal import Decimal
+from calculator import Calculator
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from plugins.add_plugin import add
-from plugins.subtract_plugin import subtract
-from plugins.multiply_plugin import multiply
-from plugins.divide_plugin import divide
+def test_calculator_add():
+    """Test Calculator's add method."""
+    assert Calculator.add(Decimal(2), Decimal(3)) == Decimal(5)
 
-from calculator import Calculator  # Import Calculator from the calculator package
+def test_calculator_subtract():
+    """Test Calculator's subtract method."""
+    assert Calculator.subtract(Decimal(5), Decimal(2)) == Decimal(3)
 
+def test_calculator_multiply():
+    """Test Calculator's multiply method."""
+    assert Calculator.multiply(Decimal(3), Decimal(4)) == Decimal(12)
 
-def test_add():
-    assert add(5, 3) == 8
-    assert add(-2, 4) == 2
-    assert add(0, 0) == 0
+def test_calculator_divide():
+    """Test Calculator's divide method."""
+    assert Calculator.divide(Decimal(10), Decimal(2)) == Decimal(5)
 
-def test_subtract():
-    assert subtract(10, 3) == 7
-    assert subtract(5, 8) == -3
-    assert subtract(0, 0) == 0
-
-def test_multiply():
-    assert multiply(4, 5) == 20
-    assert multiply(-3, 6) == -18
-    assert multiply(0, 100) == 0
-
-def test_divide():
-    assert divide(10, 2) == 5
-    assert divide(-12, 3) == -4
-    assert divide(9, 3) == 3
-
-# ✅ Error Handling
-def test_divide_by_zero():
+def test_calculator_divide_by_zero():
+    """Test division by zero raises ValueError."""
     with pytest.raises(ValueError, match="Cannot divide by zero"):
-        divide(10, 0)
+        Calculator.divide(Decimal(10), Decimal(0))

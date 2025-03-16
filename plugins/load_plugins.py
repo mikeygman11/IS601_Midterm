@@ -1,32 +1,31 @@
+"""loading all the plugins automatically"""
 import importlib
 import os
 import pkgutil
 import logging
 
 def load_plugins(command_handler):
+    """Loading all the calculation plugins automatically."""
     plugins_package = "plugins"
     plugins_path = os.path.join(os.getcwd(), "plugins")
     logger = logging.getLogger(__name__)
     logger.info("Loading plugins...")
+
     if not os.path.exists(plugins_path):
-        logger.warning(f"Plugins directory '{plugins_path}' not found.")
-        print(f"WARNING: Plugins directory '{plugins_path}' not found.")
+        logger.warning("Plugins directory '%s' not found.", plugins_path)
         return
-    print("DEBUG: Loading plugins...")
+
     for _, plugin_name, is_pkg in pkgutil.iter_modules([plugins_path]):
         if plugin_name == "load_plugins" or is_pkg:
-            continue  # Skip the plugin loader and any package directories
+            continue
+
         try:
             plugin_module = importlib.import_module(f"{plugins_package}.{plugin_name}")
-            print(f"DEBUG: Found plugin '{plugin_name}'")
-
             if hasattr(plugin_module, "register"):
-                plugin_module.register(command_handler)  # ✅ Use `command_handler` directly (No `self.`)
-                logger.info(f"Plugin '{plugin_name}' loaded successfully.")
-                print(f"DEBUG: Plugin '{plugin_name}' registered successfully!")
+                plugin_module.register(command_handler)
+                logger.info("Plugin '%s' loaded successfully.", plugin_name)
             else:
-                logger.warning(f"Plugin '{plugin_name}' does not have a register() function.")
-                print(f"WARNING: Plugin '{plugin_name}' does not have a register() function.")
+                logger.warning("Plugin '%s' does not have a register() function.", plugin_name)
+
         except ImportError as e:
-            logger.error(f"Failed to load plugin '{plugin_name}': {e}")
-            print(f"ERROR: Failed to load plugin '{plugin_name}': {e}")
+            logger.error("Failed to load plugin '%s': %s", plugin_name, e)

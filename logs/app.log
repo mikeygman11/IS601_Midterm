@@ -110,3 +110,14 @@
 2025-03-15 18:23:28,974 - INFO - Executed add with inputs 3.0 and 4.0: Result 7.0
 2025-03-15 18:23:29,974 - INFO - Application interrupted. Exiting
 2025-03-15 18:23:29,974 - INFO - Shutting Down
+2025-03-15 18:51:09,875 - INFO - Logging configured successfully.
+2025-03-15 18:51:09,876 - INFO - Environment variables loaded.
+2025-03-15 18:51:09,876 - INFO - Loading plugins...
+2025-03-15 18:51:09,879 - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 18:51:09,879 - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 18:51:09,880 - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 18:51:09,880 - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 18:51:09,880 - INFO - Application started. Type 'exit' to exit.
+2025-03-15 18:51:18,134 - INFO - Executed add with inputs 3.0 and 5.0: Result 8.0
+2025-03-15 18:51:18,931 - INFO - Application interrupted. Exiting
+2025-03-15 18:51:18,931 - INFO - Shutting Down

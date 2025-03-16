@@ -1,11 +1,12 @@
-from decimal import Decimal
-from typing import Callable, List
-
+"""
+This module manages a history of calculations, allowing users to add, retrieve, and search past calculations.
+"""
+from typing import  List
 from calculator.calculation import Calculation
 
 class Calculations:
+    """calculation class to perform a calculation with history"""
     history: List[Calculation] = []
-
     @classmethod
     def add_calculation(cls, calculation: Calculation):
         """Add a new calculation to the history."""
