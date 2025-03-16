@@ -51,33 +51,57 @@ This project is an advanced Python-based calculator application designed to show
 
 ## Setup and Installation
 
-### Prerequisites
+
+## Prerequisites
 - **Python 3.8+**  
 - **Pip**  
-- **Virtual Environment (venv recommended)**
+- **Virtual Environment (venv recommended)**  
 
-### Installation Steps
+## Installation Steps
+
 1. **Clone the Repository:**
    ```bash
    git clone https://github.com/mikeygman11/IS601_CalcApp.git
    cd IS601_CalcApp
-2. **Create Virtual Env:**
-```bash 
-python -m venv venv
-```
-On Linux/Mac:
-source venv/bin/activate
+   ```
 
-On Windows:
-venv\Scripts\activate
-3. **Install Needed Dependencies:**
-pip install -r requirements.txt
-4. **Start the App - run python main.py**
-python main.py
-5. **Run commands for calculator:**
-You will be given options to add, subtract, multiply, divide, show history (history command), clear, menu, exit
-The command line is interactive and responsive
+2. **Create a Virtual Environment:**
+   ```bash
+   python -m venv venv
+   ```
 
+   - **On Linux/Mac:**
+     ```bash
+     source venv/bin/activate
+     ```
+
+   - **On Windows:**
+     ```bash
+     venv\Scripts\activate
+     ```
+
+3. **Install Dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Start the Application:**
+   ```bash
+   python main.py
+   ```
+
+5. **Run Commands for the Calculator:**
+   - The command-line interface will provide options to:
+     - Add
+     - Subtract
+     - Multiply
+     - Divide
+     - Show history (`history` command)
+     - Clear history
+     - Show menu
+     - Exit the application  
+
+   - The interface is interactive and user-friendly.
 Start the app: python main.py
 Perform operations: Use commands like add, subtract, multiply, divide.
 Manage history: Use history to view, and clear to delete the calculator history.
