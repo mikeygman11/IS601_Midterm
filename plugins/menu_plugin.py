@@ -2,16 +2,15 @@
 def menu():
     """Displays a menu of available commands."""
     menu_text = (
-        "\n--- REPL Menu ---\n"
+        "\n--- Calculator Menu ---\n"
         "Commands:\n"
         "- add\n"
         "- subtract\n"
         "- multiply\n"
         "- divide\n"
         "- history\n"
-        "- clear_history\n"
+        "- clear\n"
         "- menu\n"
-        "- load_env\n"
         "- exit\n"
     )
     print(menu_text)
