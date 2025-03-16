@@ -22,9 +22,13 @@ This project is an advanced Python-based calculator application designed to show
 ### Design Patterns
 - **Simple Interface / Facade Pattern:**  
   The `Calculator` class provides a simplified interface for performing operations. History management and logging are performed by other Python modules (`calculation.py`, `calculations.py`, etc.).
-  
+
+  [a link](https://github.com/mikeygman11/IS601_Midterm/tree/master/calculator)
+
 - **Command Handler:**  
   The application employs a `CommandHandler` class to register and execute commands and extends functionality.
+
+  [a link](https://github.com/mikeygman11/IS601_Midterm/tree/master/calculator)
   
 - **Factory Pattern:**  
   The `Calculation` instantiates new Calculation instances.
