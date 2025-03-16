@@ -1,5 +1,6 @@
 import sys
 import os
+import logging
 import pytest
 from app.command_handler import CommandHandler
 from plugins.load_plugins import load_plugins
@@ -50,3 +51,17 @@ def test_divide_by_zero():
     """testing dividing by zero, throw error"""
     with pytest.raises(ValueError, match="Cannot divide by zero"):
         divide(10, 0)
+
+def test_plugins_load_fails(monkeypatch, caplog):
+    """Test if plugin loading logs an error when failing."""
+    caplog.clear()
+    caplog.set_level(logging.ERROR)
+
+    def mock_import_module(_):
+        raise ImportError("Mocked ImportError")
+    monkeypatch.setattr("importlib.import_module", mock_import_module)
+    handler = CommandHandler()
+    load_plugins(handler)
+    for record in caplog.records:
+        print(f"LOG [{record.levelname}]: {record.message}")
+    assert any("Failed to load plugin" in record.message for record in caplog.records)
