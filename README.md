@@ -60,17 +60,17 @@ This project is an advanced Python-based calculator application designed to show
 Environment variables are set by default and dynamically loaded when the program launches, but can be set to the user's preferences.
 [Logging Config](https://github.com/mikeygman11/IS601_Midterm/blob/master/log/logging.conf)
 
-[Here is where the logging configuration and automatic loading of plugins happens](https://github.com/mikeygman11/IS601_Midterm/blob/master/plugins/load_plugins.py)
+[Logging Confifg and Auto-loading of Plugins](https://github.com/mikeygman11/IS601_Midterm/blob/master/plugins/load_plugins.py)
 
 In command handler, I load env variables by default, but they can be changed in the program or in the .env file. 
-[Here is where the env variable code lives](https://github.com/mikeygman11/IS601_Midterm/blob/master/app/command_handler.py)
+[Environment Variable Code](https://github.com/mikeygman11/IS601_Midterm/blob/master/app/command_handler.py)
 
 In the app initialization, I use try-catch blocks to run the calculator indefinetely unless you come across an issue with an unrecognized command (EAFP)
 
-[This is shown here](https://github.com/mikeygman11/IS601_Midterm/blob/master/app/__init__.py)
+[Try-Catch](https://github.com/mikeygman11/IS601_Midterm/blob/master/app/__init__.py)
 
 It can also be seen when loading plugins where I load the plugin and handle errors loading if there is an issue, rather than checking if the plugin exists first.
-[This is shown here](https://github.com/mikeygman11/IS601_Midterm/blob/master/app/__init__.py)
+[Another Try-Catch](https://github.com/mikeygman11/IS601_Midterm/blob/master/app/__init__.py)
 
 Finally, I implement LYBL in the divide function, when I check for division by 0 errors before executing.
 [Division by 0](https://github.com/mikeygman11/IS601_Midterm/blob/master/plugins/divide_plugin.py)
