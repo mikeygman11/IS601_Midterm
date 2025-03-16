@@ -15,21 +15,31 @@ class CommandHandler:
         self.logger = logging.getLogger(__name__)
         self.load_environment_variables()
         self.register_command("history", self.show_history)
-        self.register_command("clear_history", self.clear_history)
+        self.register_command("clear", self.clear_history)
         self.register_command("menu", self.show_menu)
         self.register_command("load_env", self.load_environment_variables)
 
     def register_command(self, command_name, function):
-        """Registers a command to be callable in the REPL."""
+        """Registers a command to be callable in the app"""
         self.commands[command_name] = function
 
-    def execute_command(self, command, *args):
-        """Executes a registered command."""
-        if command in self.commands:
-            return self.commands[command](*args)
-        self.logger.error(f"Unknown command entered: {command}")
-        raise KeyError(f"Unknown command: {command}")
 
+    def execute_command(self, command, *args):
+        """Executes a command if registered."""
+        if command in self.commands:
+            func = self.commands[command]
+
+            if callable(func):
+                expected_arg_count = func.__code__.co_argcount
+                
+                # If function takes no arguments, call it without arguments
+                if expected_arg_count == 0:
+                    return func()
+                
+                # Otherwise, execute with expected number of arguments
+                return func(*args[:expected_arg_count])
+        
+        raise KeyError(f"Unknown command: {command}")
     def show_history(self):
         """Displays the stored calculation history."""
         history = Calculations.get_history()
@@ -39,18 +49,18 @@ class CommandHandler:
                 print(calc)
         else:
             print("\nNo history found.")
-        self.logger.info("Displayed calculation history.")
+        self.logger.info("Displayed calculation history")
 
     def clear_history(self):
         """Clears stored calculation history."""
         Calculations.clear_history()
         print("\nCalculation history cleared.")
-        self.logger.info("Calculation history cleared.")
+        self.logger.info("Calculation history cleared")
 
     def show_menu(self):
         """Displays a menu of available commands."""
         menu = (
-            "\n--- REPL Menu ---\n"
+            "\n--- Calculator Menu ---\n"
             "Commands:\n"
             "- add\n"
             "- subtract\n"

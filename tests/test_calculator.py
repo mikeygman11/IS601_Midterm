@@ -1,3 +1,4 @@
+"""Testing calculator program"""
 import sys
 import os
 import pytest

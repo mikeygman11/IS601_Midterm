@@ -499,3 +499,61 @@
 2025-03-15 22:11:47,814 - ERROR - Unknown command entered: clear
 2025-03-15 22:12:22,070 - INFO - Application interrupted
 2025-03-15 22:12:22,070 - INFO - Shutting Down
+2025-03-15 22:18:14,535 - INFO - Environment variables loaded.
+2025-03-15 22:18:14,535 - INFO - Environment variables loaded.
+2025-03-15 22:18:14,535 - INFO - Loading plugins...
+2025-03-15 22:18:14,536 - INFO - Plugin 'add_plugin' registered successfully.
+2025-03-15 22:18:14,539 - INFO - Plugin 'clear_plugin' registered successfully.
+2025-03-15 22:18:14,539 - INFO - Plugin 'divide_plugin' registered successfully.
+2025-03-15 22:18:14,541 - INFO - Plugin 'history_plugin' registered successfully.
+2025-03-15 22:18:14,544 - INFO - Plugin 'menu_plugin' registered successfully.
+2025-03-15 22:18:14,545 - INFO - Plugin 'multiply_plugin' registered successfully.
+2025-03-15 22:18:14,545 - INFO - Plugin 'subtract_plugin' registered successfully.
+2025-03-15 22:18:21,006 - INFO - Environment variables loaded.
+2025-03-15 22:18:28,474 - INFO - Executed add with inputs 6.0 and 3.0: Result 9.0
+2025-03-15 22:18:34,407 - INFO - Executed divide with inputs 64.0 and 23.0: Result 2.782608695652174
+2025-03-15 22:19:02,870 - INFO - Application interrupted
+2025-03-15 22:19:02,871 - INFO - Shutting Down
+2025-03-15 22:22:25,407 - INFO - Environment variables loaded.
+2025-03-15 22:22:25,408 - INFO - Environment variables loaded.
+2025-03-15 22:22:25,408 - INFO - Loading plugins...
+2025-03-15 22:22:25,409 - INFO - Plugin 'add_plugin' registered successfully.
+2025-03-15 22:22:25,410 - INFO - Plugin 'clear_plugin' registered successfully.
+2025-03-15 22:22:25,410 - INFO - Plugin 'divide_plugin' registered successfully.
+2025-03-15 22:22:25,411 - INFO - Plugin 'history_plugin' registered successfully.
+2025-03-15 22:22:25,411 - INFO - Plugin 'menu_plugin' registered successfully.
+2025-03-15 22:22:25,411 - INFO - Plugin 'multiply_plugin' registered successfully.
+2025-03-15 22:22:25,411 - INFO - Plugin 'subtract_plugin' registered successfully.
+2025-03-15 22:22:32,790 - INFO - Executed add with inputs 5.0 and 3.0: Result 8.0
+2025-03-15 22:22:43,266 - INFO - Shutting Down
+2025-03-15 22:26:43,539 - INFO - Environment variables loaded.
+2025-03-15 22:26:43,539 - INFO - Environment variables loaded.
+2025-03-15 22:26:43,540 - INFO - Loading plugins...
+2025-03-15 22:26:43,540 - INFO - Plugin 'add_plugin' registered successfully.
+2025-03-15 22:26:43,540 - INFO - Plugin 'clear_plugin' registered successfully.
+2025-03-15 22:26:43,541 - INFO - Plugin 'divide_plugin' registered successfully.
+2025-03-15 22:26:43,541 - INFO - Plugin 'history_plugin' registered successfully.
+2025-03-15 22:26:43,541 - INFO - Plugin 'menu_plugin' registered successfully.
+2025-03-15 22:26:43,542 - INFO - Plugin 'multiply_plugin' registered successfully.
+2025-03-15 22:26:43,542 - INFO - Plugin 'subtract_plugin' registered successfully.
+2025-03-15 22:26:46,810 - INFO - Executed clear with inputs 2.0 and 3.0: Result None
+2025-03-15 22:26:51,802 - INFO - Executed add with inputs 5.0 and 3.0: Result 8.0
+2025-03-15 22:26:56,415 - WARNING - Invalid number input for command clear
+2025-03-15 22:26:57,135 - ERROR - Unknown command entered: 4
+2025-03-15 22:27:20,089 - INFO - Executed add with inputs 5.0 and 3.0: Result 8.0
+2025-03-15 22:27:22,672 - INFO - Executed clear with inputs 54.0 and 3.0: Result None
+2025-03-15 22:28:57,970 - INFO - Application interrupted
+2025-03-15 22:28:57,970 - INFO - Shutting Down
+2025-03-15 22:29:01,336 - INFO - Environment variables loaded.
+2025-03-15 22:29:01,337 - INFO - Environment variables loaded.
+2025-03-15 22:29:01,337 - INFO - Loading plugins...
+2025-03-15 22:29:01,337 - INFO - Plugin 'add_plugin' registered successfully.
+2025-03-15 22:29:01,337 - INFO - Plugin 'clear_plugin' registered successfully.
+2025-03-15 22:29:01,338 - INFO - Plugin 'divide_plugin' registered successfully.
+2025-03-15 22:29:01,338 - INFO - Plugin 'history_plugin' registered successfully.
+2025-03-15 22:29:01,338 - INFO - Plugin 'menu_plugin' registered successfully.
+2025-03-15 22:29:01,338 - INFO - Plugin 'multiply_plugin' registered successfully.
+2025-03-15 22:29:01,339 - INFO - Plugin 'subtract_plugin' registered successfully.
+2025-03-15 22:29:05,070 - INFO - Executed add with inputs 5.0 and 4.0: Result 9.0
+2025-03-15 22:29:13,963 - INFO - Application interrupted
+2025-03-15 22:29:13,963 - INFO - Shutting Down

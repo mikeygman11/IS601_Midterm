@@ -50,7 +50,7 @@ def test_clear_history(capsys):
 
     # Clear history using the command handler
     app = App()
-    app.command_handler.execute_command("clear_history")  # Calls the clear history plugin
+    app.command_handler.execute_command("clear")  # Calls the clear history plugin
 
     captured = capsys.readouterr().out
     assert "Calculation history cleared" in captured

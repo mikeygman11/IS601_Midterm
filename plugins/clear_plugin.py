@@ -8,4 +8,4 @@ def clear_history():
 
 def register(command_handler):
     """Register the clear history command."""
-    command_handler.register_command("clear_history", clear_history)
+    command_handler.register_command("clear", clear_history)

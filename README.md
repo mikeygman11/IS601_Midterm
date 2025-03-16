@@ -13,7 +13,7 @@ This project is an advanced Python-based calculator application designed to show
 - **REPL Commands:** Provides additional commandsL:
   - `menu` – List available commands.
   - `history` – Display historical calculations.
-  - `clear_history` – Clear all calculation history.
+  - `clear` – Clear all calculation history.
 - **Dynamic Logging Configuration:** Logging is configured via environment variables and the `logging.conf` file. Users can adjust logging levels and output of the logging file as needed
 - **Pytest, Pylint, Testing:** Achieves 95%+ test coverage using Pytest and 9.15/10+ code rating and maintains code quality with Pylint, adhering to PEP 8 standards.
 
@@ -77,7 +77,7 @@ The command line is interactive and responsive
 
 Start the app: python main.py
 Perform operations: Use commands like add, subtract, multiply, divide.
-Manage history: Use history to view, and clear_history to delete the calculator history.
+Manage history: Use history to view, and clear to delete the calculator history.
 Display commands: Use menu to list available commands.
 Exit: Use exit to terminate the application.
 

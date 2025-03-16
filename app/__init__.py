@@ -30,19 +30,21 @@ class App:
 
     def start(self):
         """Start the REPL."""
-        print("\n--- Welcome to the Calculator REPL ---")
-        print("Supported commands: add, subtract, multiply, divide, history, clear_history, menu, load_env, exit")
-        
+        print("\n--- Welcome to Mike's calculator app ---")
+        print("Arithmetic operations include: add, subtract, multiply, divide.")
+        print("Other commands to choose from: history, clear, menu. Type exit to terminate the application")
         try:
             while True:
                 cmd_input = input(">>> ").strip().lower()
                 if cmd_input == "exit":
                     logging.info("Application exiting.")
-                    print("Exiting...")
+                    print("Exit")
                     sys.exit(0)
-                elif cmd_input in ["menu", "history", "clear_history", "load_env"]:
+
+                elif cmd_input in ["menu", "history", "clear"]:
                     self.command_handler.execute_command(cmd_input)
                     continue
+
                 elif cmd_input not in self.command_handler.commands:
                     logging.error("Unknown command entered: %s", cmd_input)
                     print(f"Error: Unknown command '{cmd_input}'")
