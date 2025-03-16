@@ -335,3 +335,79 @@
 2025-03-15 20:45:25 - plugins.load_plugins - ERROR - Failed to load plugin 'divide_plugin': Mocked ImportError
 2025-03-15 20:45:25 - plugins.load_plugins - ERROR - Failed to load plugin 'multiply_plugin': Mocked ImportError
 2025-03-15 20:45:25 - plugins.load_plugins - ERROR - Failed to load plugin 'subtract_plugin': Mocked ImportError
+2025-03-15 21:00:59 - plugins.load_plugins - INFO - Loading plugins...
+2025-03-15 21:00:59 - plugins.load_plugins - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 21:00:59 - plugins.load_plugins - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 21:00:59 - plugins.load_plugins - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 21:00:59 - plugins.load_plugins - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 21:01:06 - root - ERROR - Unknown command entered: e
+2025-03-15 21:01:17 - root - INFO - Executed add with inputs 3.0 and 23.0: Result 26.0
+2025-03-15 21:01:28 - root - INFO - Shutting Down
+2025-03-15 21:02:30,340 - INFO - Loading plugins...
+2025-03-15 21:02:30,340 - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 21:02:30,341 - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 21:02:30,341 - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 21:02:30,341 - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 21:02:32,266 - ERROR - Unknown command entered: lo
+2025-03-15 21:02:33,754 - INFO - Application exiting
+2025-03-15 21:02:33,754 - INFO - Shutting Down
+2025-03-15 21:02:35,023 - INFO - Loading plugins...
+2025-03-15 21:02:35,023 - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 21:02:35,024 - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 21:02:35,024 - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 21:02:35,024 - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 21:02:40,850 - INFO - Executed add with inputs 4.0 and 2.0: Result 6.0
+2025-03-15 21:02:43,739 - INFO - Shutting Down
+2025-03-15 21:04:51,269 - INFO - Loading plugins...
+2025-03-15 21:04:51,269 - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 21:04:51,270 - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 21:04:51,270 - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 21:04:51,270 - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 21:04:57,076 - INFO - Executed add with inputs 4.0 and 2.0: Result 6.0
+2025-03-15 21:06:22,154 - INFO - Shutting Down
+2025-03-15 21:06:23,709 - INFO - Loading plugins...
+2025-03-15 21:06:23,709 - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 21:06:23,710 - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 21:06:23,710 - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 21:06:23,710 - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 21:06:26,786 - INFO - Executed add with inputs 3.0 and 4.0: Result 7.0
+2025-03-15 21:06:31,224 - INFO - Shutting Down
+2025-03-15 21:07:33,691 - INFO - Loading plugins...
+2025-03-15 21:07:33,692 - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 21:07:33,692 - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 21:07:33,693 - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 21:07:33,693 - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 21:08:08,252 - INFO - Loading plugins...
+2025-03-15 21:08:08,252 - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 21:08:08,253 - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 21:08:08,253 - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 21:08:08,253 - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 21:08:10,573 - INFO - Executed add with inputs 3.0 and 5.0: Result 8.0
+2025-03-15 21:08:21,637 - INFO - Shutting Down
+2025-03-15 21:09:00,713 - INFO - Loading plugins...
+2025-03-15 21:09:00,714 - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 21:09:00,714 - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 21:09:00,714 - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 21:09:00,715 - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 21:09:03,754 - INFO - Executed add with inputs 45.0 and 2.0: Result 47.0
+2025-03-15 21:09:06,896 - INFO - Shutting Down
+2025-03-15 21:14:25,548 - INFO - Environment variables loaded.
+2025-03-15 21:14:25,549 - INFO - Loading plugins...
+2025-03-15 21:14:25,549 - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 21:14:25,549 - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 21:14:25,550 - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 21:14:25,550 - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 21:14:30,763 - INFO - Executed add with inputs 3.0 and 5.0: Result 8.0
+2025-03-15 21:14:33,667 - INFO - Application interrupted
+2025-03-15 21:14:33,667 - INFO - Shutting Down
+2025-03-15 21:17:26,003 - INFO - Environment variables loaded.
+2025-03-15 21:17:26,003 - INFO - Loading plugins...
+2025-03-15 21:17:26,005 - INFO - Plugin 'add_plugin' loaded successfully.
+2025-03-15 21:17:26,006 - INFO - Plugin 'divide_plugin' loaded successfully.
+2025-03-15 21:17:26,008 - INFO - Plugin 'multiply_plugin' loaded successfully.
+2025-03-15 21:17:26,009 - INFO - Plugin 'subtract_plugin' loaded successfully.
+2025-03-15 21:17:30,032 - INFO - Executed add with inputs 5.3 and 3.0: Result 8.3
+2025-03-15 21:17:40,413 - INFO - Executed divide with inputs 665.0 and 23.0: Result 28.91304347826087
+2025-03-15 21:18:22,927 - INFO - Executed subtract with inputs 55.0 and 3.0: Result 52.0
+2025-03-15 21:18:27,945 - INFO - Application exiting.
+2025-03-15 21:18:27,945 - INFO - Shutting Down

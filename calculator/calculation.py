@@ -1,12 +1,12 @@
 """
-This module defines the Calculation class, which represents a calculation
-in the calculator, including operands and the operation performed.
+This module defines the Calculation class, which represents a single calculation.
+It holds the operands and the operation, and can perform the calculation.
 """
 from decimal import Decimal
 from typing import Callable
 
 class Calculation:
-    """Calculation class for calculator operations"""
+    """Calculation class for performing an arithmetic operation."""
     def __init__(self, a: Decimal, b: Decimal, operation: Callable[[Decimal, Decimal], Decimal]):
         self.a = a
         self.b = b
@@ -14,7 +14,7 @@ class Calculation:
 
     @staticmethod    
     def create(a: Decimal, b: Decimal, operation: Callable[[Decimal, Decimal], Decimal]):
-        """create a new function"""
+        """Create a new Calculation instance."""
         return Calculation(a, b, operation)
 
     def perform(self) -> Decimal:

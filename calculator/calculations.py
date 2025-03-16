@@ -1,35 +1,74 @@
 """
-This module manages a history of calculations, allowing users to add, retrieve, and search past calculations.
+This module manages a history of calculations using Pandas.
+Calculations are stored in a CSV file so that the history persists across sessions.
 """
-from typing import  List
+import pandas as pd
+import os
+from typing import List
 from calculator.calculation import Calculation
 
 class Calculations:
-    """calculation class to perform a calculation with history"""
+    """Class to manage calculation history using Pandas."""
     history: List[Calculation] = []
+    history_file = "logs/calculation_history.csv"
+
     @classmethod
     def add_calculation(cls, calculation: Calculation):
-        """Add a new calculation to the history."""
+        """Add a new calculation to the history and save it to CSV."""
+        print("DEBUG: Adding calculation to history.")
         cls.history.append(calculation)
+        cls.save_history()
 
     @classmethod
     def get_history(cls) -> List[Calculation]:
-        """Retrieve the entire history of calculations."""
+        """Return the current calculation history as a list."""
         return cls.history
 
     @classmethod
     def clear_history(cls):
-        """Clear the history of calculations."""
+        """Clear the history and delete the CSV file."""
         cls.history.clear()
+        if os.path.exists(cls.history_file):
+            os.remove(cls.history_file)
 
     @classmethod
     def get_latest(cls) -> Calculation:
-        """Get the latest calculation. Returns None if there's no history."""
+        """Get the latest calculation. Returns None if no history exists."""
         if cls.history:
             return cls.history[-1]
         return None
 
     @classmethod
     def find_by_operation(cls, operation_name: str) -> List[Calculation]:
-        """Find and return a list of calculations by operation name."""
+        """Return a list of calculations matching the given operation name."""
         return [calc for calc in cls.history if calc.operation.__name__ == operation_name]
+
+    @classmethod
+    def save_history(cls):
+        """Save the calculation history to CSV using Pandas."""
+        if cls.history:
+            data = [
+                {"a": calc.a, "b": calc.b, "operation": calc.operation.__name__, "result": calc.perform()}
+                for calc in cls.history
+            ]
+            df = pd.DataFrame(data)
+            os.makedirs("logs", exist_ok=True)
+            df.to_csv(cls.history_file, index=False)
+            print(f"DEBUG: History successfully saved to {cls.history_file}")
+        else:
+            print("DEBUG: No calculations to save.")
+
+    @classmethod
+    def load_history(cls):
+        """Load calculation history from CSV using Pandas."""
+        if os.path.exists(cls.history_file):
+            df = pd.read_csv(cls.history_file)
+            if df.empty:
+                print("DEBUG: History file is empty.")
+            else:
+                # For simplicity, we won't reconstruct Calculation objects.
+                print(f"DEBUG: Loaded {len(df)} history records.")
+            return df
+        else:
+            print("DEBUG: No history file found.")
+            return None
